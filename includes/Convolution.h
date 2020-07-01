@@ -1,9 +1,9 @@
 #pragma once
 
 #include "../../includes/header_common.h"
-// #include "../SM-Buffered_arrays/includes/buffered_arrays.h"
-// #include "../../SM-Scoped_timer/includes/scoped_timer.h"
-#include "../../SM-Omp_extra/includes/omp_extra.h"
+// #include "../Buffered_arrays/includes/buffered_arrays.h"
+// #include "../../Scoped_timer/includes/scoped_timer.h"
+#include "../../Omp_extra/includes/omp_extra.h"
 
 
 // Core functions
