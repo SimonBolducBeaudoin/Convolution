@@ -68,3 +68,4 @@ void init_Convolution(py::module &m)
 
 #undef CONVOLUTION_DIRECTE
 #undef CONVOLUTION_RAPPIDE
+
