@@ -8,7 +8,6 @@ MULTI_ARRAY =   ../Multi_array
 OMP_EXTRA   =   ../Omp_extra
 LIBS        =   ../libs
 
-IDIR = includes
 ODIR = obj
 LDIR = lib
 SDIR = src
@@ -16,8 +15,8 @@ SDIR = src
 OMP_EXTRA_OBJ = $(wildcard $(OMP_EXTRA)/$(ODIR)/*.o)
 
 EXTERNAL_OBJ = $(OMP_EXTRA_OBJ)
-EXTERNAL_INCLUDES = -I$(OMP_EXTRA)/$(IDIR)  -I$(MULTI_ARRAY)/$(IDIR) \
-                    -I$(CONVOLUTION)/$(IDIR)
+EXTERNAL_INCLUDES = -I$(OMP_EXTRA)/$(SDIR)  -I$(MULTI_ARRAY)/$(SDIR) \
+                    -I$(CONVOLUTION)/$(SDIR)
 
 SRC  = $(wildcard $(SDIR)/*.cpp)
 OBJ  = $(patsubst $(SDIR)/%.cpp,$(ODIR)/%.o,$(SRC))
